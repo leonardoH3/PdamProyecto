@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ListaCursos"
+            android:label="@string/title_activity_lista_cursos" />
+        <activity
+            android:name=".CrearUsuario"
+            android:label="@string/title_activity_crear_usuario" />
+        <activity
+            android:name=".PerfilUsuario"
+            android:label="@string/title_activity_perfil" />
+        <activity
+            android:name=".PerfilCurso"
+            android:label="@string/title_activity_perfil_curso" />
+        <activity
+            android:name=".VentaTickets"
+            android:label="@string/title_activity_venta_tickets"></activity>
     </application>
 
 </manifest>
