@@ -23,4 +23,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         startActivity(new Intent(MainActivity.this, ListaCursos.class));
     }
+
+    public void registrarse(View view) {
+        startActivity(new Intent(MainActivity.this, CrearUsuario.class));
+    }
 }
