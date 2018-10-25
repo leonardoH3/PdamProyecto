@@ -30,7 +30,8 @@
             android:label="@string/title_activity_perfil_curso" />
         <activity
             android:name=".VentaTickets"
-            android:label="@string/title_activity_venta_tickets"></activity>
+            android:label="@string/title_activity_venta_tickets" />
+        <activity android:name=".ListaRecetasUsuario"></activity>
     </application>
 
 </manifest>

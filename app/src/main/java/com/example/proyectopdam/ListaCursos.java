@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,7 +72,11 @@ public class ListaCursos extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = arrayAdapter.getItem(position);
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Se selecciono la receta "+ item,
+                        Toast.LENGTH_SHORT);
 
+                toast.show();
                 Intent intent = new Intent(ListaCursos.this,MainActivity.class);
                 //based on item add info to intent
                 startActivity(intent);
