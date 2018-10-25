@@ -77,7 +77,7 @@ public class ListaCursos extends Activity {
                         Toast.LENGTH_SHORT);
 
                 toast.show();
-                Intent intent = new Intent(ListaCursos.this,MainActivity.class);
+                Intent intent = new Intent(ListaCursos.this,PerfilReceta.class);
                 //based on item add info to intent
                 startActivity(intent);
             }

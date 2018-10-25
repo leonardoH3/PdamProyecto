@@ -26,7 +26,7 @@
             android:name=".PerfilUsuario"
             android:label="@string/title_activity_perfil" />
         <activity
-            android:name=".PerfilCurso"
+            android:name=".PerfilReceta"
             android:label="@string/title_activity_perfil_curso" />
         <activity
             android:name=".VentaTickets"
