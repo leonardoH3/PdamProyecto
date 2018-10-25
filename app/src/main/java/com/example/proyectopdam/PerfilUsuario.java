@@ -1,7 +1,9 @@
 package com.example.proyectopdam;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.View;
 
 public class PerfilUsuario extends Activity {
 
@@ -11,4 +13,8 @@ public class PerfilUsuario extends Activity {
         setContentView(R.layout.activity_perfil_usuario);
     }
 
+    public void misRecetas(View view) {
+        Intent intent = new Intent(PerfilUsuario.this,ListaRecetasUsuario.class);
+        startActivity(intent);
+    }
 }

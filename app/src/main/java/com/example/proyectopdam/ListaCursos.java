@@ -85,4 +85,7 @@ public class ListaCursos extends Activity {
         });
     }
 
+    public void perfilPersonal(View view) {
+        startActivity(new Intent(ListaCursos.this, PerfilUsuario.class));
+    }
 }

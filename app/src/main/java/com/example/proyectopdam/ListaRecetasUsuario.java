@@ -47,7 +47,7 @@ public class ListaRecetasUsuario extends Activity {
                         Toast.LENGTH_SHORT);
 
                 toast.show();
-                Intent intent = new Intent(ListaRecetasUsuario.this,MainActivity.class);
+                Intent intent = new Intent(ListaRecetasUsuario.this,PerfilReceta.class);
                 //based on item add info to intent
                 startActivity(intent);
             }

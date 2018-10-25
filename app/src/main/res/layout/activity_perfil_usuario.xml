@@ -69,19 +69,19 @@
             android:id="@+id/textView4"
             android:layout_width="374dp"
             android:layout_height="100dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginRight="21dp"
             android:layout_marginBottom="77dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/descripcionback"
             android:text="  \n   Descripción: Escribe algo sobre tí."
             android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.952" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -139,17 +139,25 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3"></RelativeLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonRecetasPropias"
             android:layout_width="178dp"
             android:layout_height="54dp"
 
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/buttonshape"
+
             android:text="Mis Recetas"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="155dp"
-
-            tools:layout_editor_absoluteY="382dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:onClick="misRecetas"/>
 
     </android.support.constraint.ConstraintLayout>
 </RelativeLayout>

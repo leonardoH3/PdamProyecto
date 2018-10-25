@@ -84,7 +84,12 @@
         android:elevation="10dp"
         app:cardBackgroundColor="#d9910404"
         app:cardCornerRadius="25dp">
-
+        <Button
+            android:id="@+id/buttonRegistrarse"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:onClick="registrarUsuario"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
