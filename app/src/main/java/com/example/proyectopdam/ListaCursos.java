@@ -1,7 +1,10 @@
 package com.example.proyectopdam;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -17,6 +20,8 @@ public class ListaCursos extends Activity {
         setContentView(R.layout.activity_lista_cursos);
         this.setTitle("Recetas populares");
         lv = (ListView) findViewById(R.id.listaRecetasPopulares);
+
+
 
         /*
         List<Receta> recetas = new ArrayList<Receta>();
@@ -56,12 +61,23 @@ public class ListaCursos extends Activity {
         recetas.add("Espaguetis al pesto");
 
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_list_item_1,
                 recetas );
 
         lv.setAdapter(arrayAdapter);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = arrayAdapter.getItem(position);
+
+                Intent intent = new Intent(ListaCursos.this,MainActivity.class);
+                //based on item add info to intent
+                startActivity(intent);
+            }
+
+        });
     }
 
 }
