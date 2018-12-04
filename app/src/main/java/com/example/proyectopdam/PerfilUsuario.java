@@ -14,7 +14,7 @@ public class PerfilUsuario extends Activity {
     }
 
     public void misRecetas(View view) {
-        Intent intent = new Intent(PerfilUsuario.this,PerfilCurso.class);
+        Intent intent = new Intent(PerfilUsuario.this,ListaCursos.class);
         startActivity(intent);
     }
 }

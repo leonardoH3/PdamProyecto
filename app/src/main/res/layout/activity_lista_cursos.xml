@@ -7,6 +7,7 @@
     tools:context=".ListaCursos"
     android:background="@drawable/kitchen"
     android:orientation="vertical">
+
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:background="@drawable/visibility"
@@ -19,6 +20,27 @@
         tools:layout_editor_absoluteX="329dp"
         tools:layout_editor_absoluteY="0dp">
 
+        <Button
+            android:id="@+id/buttonPerfil"
+            android:layout_width="64dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="472dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape1"
+            android:drawableStart="@android:drawable/ic_menu_preferences"
+            android:onClick="perfilPersonal"
+            android:paddingLeft="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/listaRecetasPopulares" />
+
         <SearchView
             android:id="@+id/buscarRecetas"
             android:layout_width="match_parent"
@@ -30,37 +52,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/buttonPerfil"
-            android:layout_width="64dp"
-            android:layout_height="61dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="360dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape1"
-            android:drawableStart="@android:drawable/ic_menu_preferences"
-            android:onClick="perfilPersonal"
-            android:paddingLeft="17dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.924"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/listaRecetasPopulares" />
-
         <ListView
             android:id="@+id/listaRecetasPopulares"
-            android:layout_width="382dp"
+            android:layout_width="304dp"
             android:layout_height="687dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toStartOf="@+id/buttonPerfil"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>
