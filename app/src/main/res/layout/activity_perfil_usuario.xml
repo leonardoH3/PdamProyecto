@@ -4,16 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#becde5"
     tools:context=".PerfilUsuario">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="405dp">
     </RelativeLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/culinary"
-        android:scaleType="centerCrop"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,6 +18,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="@drawable/imagevisibility"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -67,73 +65,34 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="374dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="77dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="335dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="#000"
             android:background="@drawable/descripcionback"
             android:text="  \n   Descripción: Escribe algo sobre tí."
-            android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonRecetasPropias"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.407"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.952" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="295dp"
-            android:layout_marginRight="295dp"
-            android:layout_marginBottom="40dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="200"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RECETAS"
-                android:textSize="15sp" />
-
-            <RelativeLayout
-                android:layout_width="70dp"
-                android:layout_height="4dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/linearback"></RelativeLayout>
-        </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
             android:layout_width="200dp"
             android:layout_height="8dp"
-            android:layout_marginStart="105dp"
-            android:layout_marginLeft="105dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="106dp"
-            android:layout_marginRight="106dp"
-            android:layout_marginBottom="319dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
             android:background="@drawable/linearback"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"></RelativeLayout>
@@ -143,21 +102,32 @@
             android:layout_width="178dp"
             android:layout_height="54dp"
 
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/buttonshape"
 
-            android:text="Mis Recetas"
+            android:onClick="misRecetas"
+            android:text="Mis Cursos"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            android:onClick="misRecetas"/>
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="245dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:textColor="#000000"
+            android:inputType="textPersonName"
+            android:text="xbrandon93x@gmail.com"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="298dp" />
 
     </android.support.constraint.ConstraintLayout>
 </RelativeLayout>
