@@ -5,33 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListaCursos"
-    android:background="@drawable/background_claro"
+    android:background="@drawable/kitchen"
     android:orientation="vertical">
-
-
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:orientation="horizontal">
+        android:background="@drawable/visibility"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="329dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <SearchView
+            android:id="@+id/buscarRecetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#26000000"
+            app:layout_constraintBottom_toTopOf="@+id/listaRecetasPopulares"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/buttonPerfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:text="Mi Perfil"
-            android:onClick="perfilPersonal"/>
-    </LinearLayout>
+            android:background="@drawable/buttonshape1"
+            android:drawableStart="@android:drawable/ic_menu_preferences"
+            android:onClick="perfilPersonal"
+            android:paddingLeft="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.924"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/listaRecetasPopulares" />
 
-    <SearchView
-        android:id="@+id/buscarRecetas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <ListView
-        android:id="@+id/listaRecetasPopulares"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <ListView
+            android:id="@+id/listaRecetasPopulares"
+            android:layout_width="382dp"
+            android:layout_height="687dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
 </LinearLayout>
