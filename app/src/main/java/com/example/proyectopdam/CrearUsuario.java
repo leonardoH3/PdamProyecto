@@ -91,7 +91,7 @@ public class CrearUsuario extends Activity {
         b.putString("usuario",editUsuario.getText().toString());
         b.putString("email",editEmail.getText().toString());
         b.putString("password",editContrasena.getText().toString());
-        Intent in = new Intent(CrearUsuario.this, MainActivity.class);
+        Intent in = new Intent(CrearUsuario.this,ListaCursos.class);
         in.putExtras(b);
         Toast toast = Toast.makeText(getApplicationContext(),
                 "El usuario se creo satisfactoriamente",
